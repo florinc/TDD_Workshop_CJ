@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
@@ -88,29 +87,6 @@ namespace POS.UniTests
             {
                 if (BarcodeScanned != null)
                     BarcodeScanned(this, new BarcodeScannedEventArgs {Barcode = barcode});
-            }
-        }
-
-        private class FakeProducRepository : IProductRepository
-        {
-            private readonly Dictionary<string, double> m_Products;
-
-            /// <summary>
-            ///   Initializes a new instance of the <see cref = "T:System.Object" /> class.
-            /// </summary>
-            public FakeProducRepository(Dictionary<string, double> products)
-            {
-                m_Products = products;
-            }
-
-            public double GetPrice(string productCode)
-            {
-                return m_Products[productCode];
-            }
-
-            public bool IsProvincial(string productCode)
-            {
-                throw new NotImplementedException();
             }
         }
     }
