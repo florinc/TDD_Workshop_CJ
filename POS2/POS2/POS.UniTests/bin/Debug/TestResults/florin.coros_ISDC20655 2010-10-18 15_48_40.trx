@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="43d5c7e1-0764-49f1-8cd2-dc419dd8fff3" name="florin.coros@ISDC20655 2010-10-18 15:48:40" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="458cc489-e0c0-47d6-bd63-6380afd613c8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-18 15_48_40" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-18T15:48:40.1481047+03:00" queuing="2010-10-18T15:48:40.4541353+03:00" start="2010-10-18T15:48:40.7351634+03:00" finish="2010-10-18T15:48:41.5012400+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="2" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenScanned_PriceWithFederalTaxDisplayed" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="9e466bff-7acc-dc21-27a0-13d1f9e7e6eb">
+      <Execution timeOut="1800000" id="ff099a4b-8532-4337-9e36-5c2c7b5d696e" />
+      <TestMethod codeBase="d:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenScanned_PriceWithFederalTaxDisplayed" />
+    </UnitTest>
+    <UnitTest name="WhenInvalidBarcode_ErrorShown" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="00503b65-dc94-056e-9ab0-8d44aa21a90a">
+      <Execution timeOut="1800000" id="406fe109-b455-4c75-b445-9995dc8ce9d3" />
+      <TestMethod codeBase="d:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenInvalidBarcode_ErrorShown" />
+    </UnitTest>
+    <UnitTest name="WhenScanned_PriceDisplayed" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="5bc4a45e-38a8-7118-e2f3-30876582aabf">
+      <Execution timeOut="1800000" id="dcd62dc6-0461-4656-af96-ab17a28258dd" />
+      <TestMethod codeBase="d:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenScanned_PriceDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="00503b65-dc94-056e-9ab0-8d44aa21a90a" executionId="406fe109-b455-4c75-b445-9995dc8ce9d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bc4a45e-38a8-7118-e2f3-30876582aabf" executionId="dcd62dc6-0461-4656-af96-ab17a28258dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e466bff-7acc-dc21-27a0-13d1f9e7e6eb" executionId="ff099a4b-8532-4337-9e36-5c2c7b5d696e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="406fe109-b455-4c75-b445-9995dc8ce9d3" testId="00503b65-dc94-056e-9ab0-8d44aa21a90a" testName="WhenInvalidBarcode_ErrorShown" computerName="ISDC20655" duration="00:00:00.3489363" startTime="2010-10-18T15:48:40.9061805+03:00" endTime="2010-10-18T15:48:41.3232222+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="406fe109-b455-4c75-b445-9995dc8ce9d3">
+    </UnitTestResult>
+    <UnitTestResult executionId="dcd62dc6-0461-4656-af96-ab17a28258dd" testId="5bc4a45e-38a8-7118-e2f3-30876582aabf" testName="WhenScanned_PriceDisplayed" computerName="ISDC20655" duration="00:00:00.0160078" startTime="2010-10-18T15:48:41.3292228+03:00" endTime="2010-10-18T15:48:41.3572256+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcd62dc6-0461-4656-af96-ab17a28258dd">
+    </UnitTestResult>
+    <UnitTestResult executionId="ff099a4b-8532-4337-9e36-5c2c7b5d696e" testId="9e466bff-7acc-dc21-27a0-13d1f9e7e6eb" testName="WhenScanned_PriceWithFederalTaxDisplayed" computerName="ISDC20655" duration="00:00:00.0509684" startTime="2010-10-18T15:48:41.3652264+03:00" endTime="2010-10-18T15:48:41.4162315+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff099a4b-8532-4337-9e36-5c2c7b5d696e">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method POS.UniTests.PricePresenterTests.WhenScanned_PriceWithFederalTaxDisplayed threw exception: 
+Moq.MockException: 
+Expected invocation on the mock once, but was 0 times: p =&gt; p.ShowPrice(105)</Message>
+          <StackTrace>    at Moq.Mock.ThrowVerifyException(IProxyCall expected, Expression expression, Times times, Int32 callCount)
+   at Moq.Mock.VerifyCalls(Interceptor targetInterceptor, MethodCall expected, Expression expression, Times times)
+   at Moq.Mock.Verify[T](Mock mock, Expression`1 expression, Times times, String failMessage)
+   at Moq.Mock`1.Verify(Expression`1 expression, Times times)
+   at POS.UniTests.PricePresenterTests.WhenScanned_PriceWithFederalTaxDisplayed() in d:\Training\TDD_WS\POS2\POS2\POS.UniTests\PricePresenterTests.cs:line 55
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

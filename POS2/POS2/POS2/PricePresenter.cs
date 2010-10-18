@@ -6,13 +6,15 @@ namespace POS
     {
         private readonly IScanner m_Scanner;
         private readonly IPriceDisplay m_PriceDisplay;
-        private readonly IProductLookup m_ProductLookup;
-        private const double federalTaxPercent = 5;
+        private readonly IProductRepository m_ProductRepository;
+        private readonly ITaxCalculator m_TaxCalculator;
+        private const double provincialTaxPercent = 8;
 
-        public PricePresenter(IScanner scanner, IPriceDisplay priceDisplay, IProductLookup productLookup)
+        public PricePresenter(IScanner scanner, IPriceDisplay priceDisplay, IProductRepository productRepository, ITaxCalculator taxCalculator)
         {
             m_Scanner = scanner;
-            m_ProductLookup = productLookup;
+            m_ProductRepository = productRepository;
+            m_TaxCalculator = taxCalculator;
             m_PriceDisplay = priceDisplay;
 
             m_Scanner.BarcodeScanned += Scanner_BarcodeScanned;
@@ -23,11 +25,11 @@ namespace POS
             try
             {
                 string scannedBarcode = e.Barcode;
-                double price = m_ProductLookup.GetPrice(scannedBarcode);
+                double price = m_ProductRepository.GetPrice(scannedBarcode);
+                
+                double priceWithFederalTax = m_TaxCalculator.GetFederalTax(price);
 
-                price = AddFederalTax(price);
-
-                m_PriceDisplay.ShowPrice(price);
+                m_PriceDisplay.ShowPrice(priceWithFederalTax);
             }
             catch (Exception)
             {
@@ -35,10 +37,15 @@ namespace POS
             }
         }
 
-        private static double AddFederalTax(double price)
+        private static double GetProvincialTax(double price)
         {
-            double tax = price*federalTaxPercent/100;
-            return price + tax;
+            return price*provincialTaxPercent/100;
         }
+
+
+        //private static double GetFederalTax(double price)
+        //{
+        //    return price*federalTaxPercent/100;
+        //}
     }
 }

@@ -6,3 +6,4 @@ D:\Training\TDD_WS\POS2\POS2\POS2\bin\Debug\POS.pdb
 D:\Training\TDD_WS\POS2\POS2\POS2\obj\x86\Debug\POS.Properties.Resources.resources
 D:\Training\TDD_WS\POS2\POS2\POS2\obj\x86\Debug\POS.exe
 D:\Training\TDD_WS\POS2\POS2\POS2\obj\x86\Debug\POS.pdb
+d:\Training\TDD_WS\POS2\POS2\POS2\obj\x86\Debug\POS.PriceDisplay.resources
