@@ -26,7 +26,7 @@ namespace POS.UniTests
         public void WhenScanned_PriceDisplayed()
         {
             m_RepStub.Setup(r => r.GetPrice(It.IsAny<string>())).Returns(100);
-            m_TaxCalculatorStub.Setup(t => t.GetFederalTax(It.IsAny<double>())).Returns<double>(p => p);
+            m_TaxCalculatorStub.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns<double, bool>((p, b) => p);
 
             PricePresenter pos = CreateNewPricePresenter();
 
@@ -38,8 +38,8 @@ namespace POS.UniTests
         [TestMethod]
         public void WhenInvalidBarcode_ErrorShown()
         {
-            m_RepStub.Setup(r => r.GetPrice("123asd4")).Throws(new Exception());
-            m_TaxCalculatorStub.Setup(t => t.GetFederalTax(It.IsAny<double>())).Returns<double>(p => p);
+            m_RepStub.Setup(r => r.GetPrice("123asd4")).Throws(new InvalidBarcodeException());
+            m_TaxCalculatorStub.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns<double, bool>((p, b) => p);
 
             PricePresenter pos = CreateNewPricePresenter();
 
@@ -52,7 +52,7 @@ namespace POS.UniTests
         public void WhenScanned_PriceWithFederalTaxDisplayed()
         {
             m_RepStub.Setup(r => r.GetPrice("12345")).Returns(10.40);
-            m_TaxCalculatorStub.Setup(t => t.GetFederalTax(It.IsAny<double>())).Returns(10.92);
+            m_TaxCalculatorStub.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns(10.92);
 
             PricePresenter pos = CreateNewPricePresenter();
 
@@ -61,18 +61,19 @@ namespace POS.UniTests
             m_PriceDisplayMock.Verify(p => p.ShowPrice(10.92), Times.Once());
         }
 
-        //[TestMethod]
-        //public void WhenScanned_ProvincialAndFederalTaxDisplayed()
-        //{
-        //    m_repositoryMock.Setup(l => l.GetPrice(It.IsAny<string>())).Returns(100);
+        [TestMethod]
+        public void WhenScanned_ProvincialAndFederalTaxDisplayed()
+        {
+            m_RepStub.Setup(r => r.GetPrice("5678fe")).Returns(100);
+            m_RepStub.Setup(r => r.IsProvincial("5678fe")).Returns(true);
+            m_TaxCalculatorStub.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns(113);
 
+            PricePresenter pos = CreateNewPricePresenter();
 
-        //    PricePresenter pos = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_repositoryMock.Object);
+            m_Scanner.Scan("5678fe");
 
-        //    m_Scanner.Scan("5678fe");
-
-        //    m_PriceDisplayMock.Verify(p => p.ShowPrice(113), Times.Once());
-        //}
+            m_PriceDisplayMock.Verify(p => p.ShowPrice(113), Times.Once());
+        }
 
         private PricePresenter CreateNewPricePresenter()
         {
@@ -92,10 +93,10 @@ namespace POS.UniTests
 
         private class FakeProducRepository : IProductRepository
         {
-            private Dictionary<string, double> m_Products;
+            private readonly Dictionary<string, double> m_Products;
 
             /// <summary>
-            /// Initializes a new instance of the <see cref="T:System.Object"/> class.
+            ///   Initializes a new instance of the <see cref = "T:System.Object" /> class.
             /// </summary>
             public FakeProducRepository(Dictionary<string, double> products)
             {
@@ -104,7 +105,6 @@ namespace POS.UniTests
 
             public double GetPrice(string productCode)
             {
-
                 return m_Products[productCode];
             }
 

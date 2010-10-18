@@ -24,28 +24,19 @@ namespace POS
         {
             try
             {
-                string scannedBarcode = e.Barcode;
-                double price = m_ProductRepository.GetPrice(scannedBarcode);
-                
-                double priceWithFederalTax = m_TaxCalculator.GetFederalTax(price);
+                string productCode = e.Barcode;
+                double price = m_ProductRepository.GetPrice(productCode);
+
+                bool provincialTaxNeeded = m_ProductRepository.IsProvincial(productCode);
+
+                double priceWithFederalTax = m_TaxCalculator.CalculateTax(price, provincialTaxNeeded);
 
                 m_PriceDisplay.ShowPrice(priceWithFederalTax);
             }
-            catch (Exception)
+            catch (InvalidBarcodeException)
             {
                 m_PriceDisplay.ShowError();
             }
         }
-
-        private static double GetProvincialTax(double price)
-        {
-            return price*provincialTaxPercent/100;
-        }
-
-
-        //private static double GetFederalTax(double price)
-        //{
-        //    return price*federalTaxPercent/100;
-        //}
     }
 }

@@ -4,12 +4,12 @@ namespace POS
 {
     public interface ITaxCalculator
     {
-        double GetFederalTax(double price);
+        double CalculateTax(double price, bool federal);
     }
 
     class TaxCalculator : ITaxCalculator
     {
-        public double GetFederalTax(double price)
+        public double CalculateTax(double price, bool federal)
         {
             throw new NotImplementedException();
         }

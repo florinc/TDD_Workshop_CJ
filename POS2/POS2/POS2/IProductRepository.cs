@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace POS
 {
@@ -10,40 +9,37 @@ namespace POS
         bool IsProvincial(string productCode);
     }
 
-    class DictionaryProductRepository : IProductRepository, IEnumerable<Product>
+    public class InvalidBarcodeException :Exception
     {
-        private Dictionary<string, Product> products = new Dictionary<string, Product>();
-
-        public void Add(Product p)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:System.Exception"/> class.
+        /// </summary>
+        public InvalidBarcodeException()
         {
-            products.Add(p.Code, p);
         }
 
-        public double GetPrice(string productCode)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:System.Exception"/> class with a specified error message.
+        /// </summary>
+        /// <param name="message">The message that describes the error. </param>
+        public InvalidBarcodeException(string message) : base(message)
         {
-            return products[productCode].Price;
         }
 
-        public bool IsProvincial(string productCode)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:System.Exception"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+        /// </summary>
+        /// <param name="message">The error message that explains the reason for the exception. </param><param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified. </param>
+        public InvalidBarcodeException(string message, Exception innerException) : base(message, innerException)
         {
-            return products[productCode].IsProvincial;
         }
 
-        public IEnumerator<Product> GetEnumerator()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:System.Exception"/> class with serialized data.
+        /// </summary>
+        /// <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown. </param><param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination. </param><exception cref="T:System.ArgumentNullException">The <paramref name="info"/> parameter is null. </exception><exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult"/> is zero (0). </exception>
+        protected InvalidBarcodeException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
-            return products.Values.GetEnumerator();
         }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-    }
-
-    class Product
-    {
-        public string Code { get; set; }
-        public double Price { get; set;}
-        public bool IsProvincial { get; set;}
     }
 }

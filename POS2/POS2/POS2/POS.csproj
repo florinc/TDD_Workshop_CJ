@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictionaryProductRepository.cs" />
     <Compile Include="ITaxCalculator.cs" />
     <Compile Include="PriceDispaly.cs">
       <SubType>Form</SubType>
@@ -57,6 +58,7 @@
     <Compile Include="IProductRepository.cs" />
     <Compile Include="IScanner.cs" />
     <Compile Include="PricePresenter.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PriceDispaly.resx">
