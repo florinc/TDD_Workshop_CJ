@@ -24,7 +24,7 @@ namespace POS.UniTests
         {
             m_LookupMock.Setup(l => l.GetPrice(It.IsAny<string>())).Returns(10.40);
 
-            PricePresenter target = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
+            PricePresenter pos = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
 
             m_Scanner.Scan("12345");
 
@@ -36,7 +36,7 @@ namespace POS.UniTests
         {
             m_LookupMock.Setup(l => l.GetPrice(It.IsAny<string>())).Returns(11.56);
 
-            PricePresenter target = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
+            PricePresenter pos = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
 
             m_Scanner.Scan("5678");
 
@@ -48,13 +48,26 @@ namespace POS.UniTests
         {
             m_LookupMock.Setup(l => l.GetPrice(It.IsAny<string>())).Throws(new Exception());
 
-            PricePresenter target = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
+            PricePresenter pos = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
 
             m_Scanner.Scan("1234");
 
             m_PriceDisplayMock.Verify(p=>p.ShowError(), Times.Once());
         }
 
+        [TestMethod]
+        public void WhenScanned_PriceWithFederalTaxDisplayed()
+        {
+            m_LookupMock.Setup(l => l.GetPrice(It.IsAny<string>())).Returns(100);
+
+            PricePresenter pos = new PricePresenter(m_Scanner, m_PriceDisplayMock.Object, m_LookupMock.Object);
+
+            m_Scanner.Scan("5678fe");
+
+            m_PriceDisplayMock.Verify(p => p.ShowPrice(105), Times.Once());
+        }
+
+       
 
         private class FakeBarcodeScanner : IScanner
         {

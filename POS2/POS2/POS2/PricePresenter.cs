@@ -7,6 +7,7 @@ namespace POS
         private readonly IScanner m_Scanner;
         private readonly IPriceDisplay m_PriceDisplay;
         private readonly IProductLookup m_ProductLookup;
+        private const double federalTaxPercent = 5;
 
         public PricePresenter(IScanner scanner, IPriceDisplay priceDisplay, IProductLookup productLookup)
         {
@@ -24,12 +25,20 @@ namespace POS
                 string scannedBarcode = e.Barcode;
                 double price = m_ProductLookup.GetPrice(scannedBarcode);
 
+                price = AddFederalTax(price);
+
                 m_PriceDisplay.ShowPrice(price);
             }
             catch (Exception)
             {
                 m_PriceDisplay.ShowError();
             }
+        }
+
+        private static double AddFederalTax(double price)
+        {
+            double tax = price*federalTaxPercent/100;
+            return price + tax;
         }
     }
 }
