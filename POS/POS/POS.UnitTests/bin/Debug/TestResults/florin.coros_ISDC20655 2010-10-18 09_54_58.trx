@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4047961a-91e7-4d45-9456-c0eb4a5a9106" name="florin.coros@ISDC20655 2010-10-18 09:54:58" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0112e86b-3cae-4da0-9ecc-b1f9aa5f3184">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-18 09_54_58" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-18T09:54:58.2390461+03:00" queuing="2010-10-18T09:54:58.7020924+03:00" start="2010-10-18T09:54:59.0601282+03:00" finish="2010-10-18T09:54:59.8552077+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenBarcodeScanned_BarcodeDisplayed" storage="d:\training\tdd_ws\pos\pos\pos.unittests\bin\debug\pos.unittests.dll" id="7ac845d5-049d-338c-f3c1-dcfafbc2c746">
+      <Execution timeOut="1800000" id="ea5ad073-7ad7-45ec-b3f3-32b2402cefaa" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS/POS/POS.UnitTests/bin/Debug/POS.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UnitTests.ScannerListenerTests, POS.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenBarcodeScanned_BarcodeDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7ac845d5-049d-338c-f3c1-dcfafbc2c746" executionId="ea5ad073-7ad7-45ec-b3f3-32b2402cefaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ea5ad073-7ad7-45ec-b3f3-32b2402cefaa" testId="7ac845d5-049d-338c-f3c1-dcfafbc2c746" testName="WhenBarcodeScanned_BarcodeDisplayed" computerName="ISDC20655" duration="00:00:00.4394822" startTime="2010-10-18T09:54:59.2441466+03:00" endTime="2010-10-18T09:54:59.7711993+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea5ad073-7ad7-45ec-b3f3-32b2402cefaa">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method POS.UnitTests.ScannerListenerTests.WhenBarcodeScanned_BarcodeDisplayed threw exception: 
+Moq.MockException: 
+Expected invocation on the mock once, but was 0 times: d =&gt; d.DisplayBarcode(value(POS.UnitTests.ScannerListenerTests+&lt;&gt;c__DisplayClass0).barcode)</Message>
+          <StackTrace>    at Moq.Mock.ThrowVerifyException(IProxyCall expected, Expression expression, Times times, Int32 callCount)
+   at Moq.Mock.VerifyCalls(Interceptor targetInterceptor, MethodCall expected, Expression expression, Times times)
+   at Moq.Mock.Verify[T](Mock mock, Expression`1 expression, Times times, String failMessage)
+   at Moq.Mock`1.Verify(Expression`1 expression, Times times)
+   at POS.UnitTests.ScannerListenerTests.WhenBarcodeScanned_BarcodeDisplayed() in D:\Training\TDD_WS\POS\POS\POS.UnitTests\ScannerListenerTests.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

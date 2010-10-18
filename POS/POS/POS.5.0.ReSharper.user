@@ -1,0 +1,148 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:BarcodeScannedEventArgs.cs" caret="125" fromTop="5" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:IBarcodeScanner.cs" caret="71" fromTop="3" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:IPriceLookup.cs" caret="104" fromTop="3" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:IPriceDisplay.cs" caret="130" fromTop="4" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:Program.cs" caret="117" fromTop="5" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="121" fromTop="5" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="418" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:Program.cs" caret="186" fromTop="6" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:Program.cs" caret="117" fromTop="5" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:IBarcodeScanner.cs" caret="115" fromTop="5" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="628" fromTop="17" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:BarcodeScannedEventArgs.cs" caret="125" fromTop="5" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="628" fromTop="22" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="122" fromTop="5" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:IPriceLookup.cs" caret="104" fromTop="3" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="733" fromTop="19" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="122" fromTop="7" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="122" fromTop="13" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="122" fromTop="15" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="2052" fromTop="23" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="1902" fromTop="19" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="733" fromTop="14" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="733" fromTop="14" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="1737" fromTop="18" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="756" fromTop="8" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="2222" fromTop="15" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="921" fromTop="12" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:IPriceDisplay.cs" caret="130" fromTop="4" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="1342" fromTop="20" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="122" fromTop="23" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="514" fromTop="12" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="1497" fromTop="18" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="1029" fromTop="15" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="1494" fromTop="13" />
+      <File id="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD/f:ProductPricePresenterTests.cs" caret="315" fromTop="4" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="122" fromTop="5" />
+      <File id="F954F50C-25B1-4543-B074-5AA8B6BF0E3C/f:ProductPricePresenter.cs" caret="965" fromTop="31" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="0" />
+      <Item value="ScrollEventType`0" priority="0" />
+      <Item value="event" priority="0" />
+      <Item value="public" priority="3" />
+      <Item value="class" priority="4" />
+      <Item value="void" priority="2" />
+      <Item value="string" priority="6" />
+      <Item value="IScannerDisplay`0" priority="0" />
+      <Item value="test" priority="1" />
+      <Item value="new" priority="8" />
+      <Item value="Mock&lt;IBarcodeScanner&gt;" priority="0" />
+      <Item value="scMock" priority="0" />
+      <Item value="IBarcodeScanner`0" priority="2" />
+      <Item value="prop" priority="0" />
+      <Item value="BarcodeScanned" priority="1" />
+      <Item value="this" priority="0" />
+      <Item value="NullReferenceException`0" priority="0" />
+      <Item value="BarcodeScannedEventArgs" priority="0" />
+      <Item value="barcode" priority="2" />
+      <Item value="Mock`0" priority="1" />
+      <Item value="Mock&lt;IScannerDisplay&gt;" priority="0" />
+      <Item value="FakeScanner`0" priority="0" />
+      <Item value="scanner" priority="3" />
+      <Item value="FakeScanner" priority="0" />
+      <Item value="displayMock" priority="2" />
+      <Item value="d" priority="0" />
+      <Item value="Times`0" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="double" priority="4" />
+      <Item value="const" priority="0" />
+      <Item value="price" priority="0" />
+      <Item value="ProductPricePresenter" priority="1" />
+      <Item value="m_PriceDisplay" priority="2" />
+      <Item value="m_Scanner" priority="2" />
+      <Item value="do" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="IPriceDisplay`0" priority="1" />
+      <Item value="m_PriceLookup" priority="0" />
+      <Item value="e" priority="0" />
+      <Item value="ProductPricePresenter`0" priority="2" />
+      <Item value="Mock&lt;IPriceLookup&gt;" priority="0" />
+      <Item value="fakePriceLookup" priority="2" />
+      <Item value="It`0" priority="2" />
+      <Item value="p" priority="0" />
+      <Item value="Exception" priority="0" />
+      <Item value="TestInitialize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="Setup`1" priority="2" />
+      <Item value="Verify`1" priority="0" />
+      <Item value="Object" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.UnitTests.ScannerListenerTests+FakeScanner">
+      <Item value="RaiseScannedEvent`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IScannerDisplay">
+      <Item value="DisplayBarcode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.Times">
+      <Item value="Once`0" priority="1" />
+      <Item value="Never`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IBarcodeScanner">
+      <Item value="BarcodeScanned" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IPriceLookup">
+      <Item value="GetPrice`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.BarcodeScannedEventArgs">
+      <Item value="Barcode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IPriceDisplay">
+      <Item value="DisplayPrice`0" priority="0" />
+      <Item value="ShowError`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.It">
+      <Item value="IsAny`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Returns`4" priority="0" />
+      <Item value="Throws`1" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="24106218-557b-4b27-9260-4e678d689f96" name="florin.coros@ISDC20655 2010-10-18 11:23:49" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0112e86b-3cae-4da0-9ecc-b1f9aa5f3184">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-18 11_23_49" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-18T11:23:49.4741445+03:00" queuing="2010-10-18T11:23:49.7621733+03:00" start="2010-10-18T11:23:50.1532124+03:00" finish="2010-10-18T11:23:50.8532824+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenInvalidBarcode_NothingDisplayed" storage="d:\training\tdd_ws\pos\pos\pos.unittests\bin\debug\pos.unittests.dll" id="47e8f6aa-9f8f-3ddc-1273-2e6a8ba49ea6">
+      <Execution timeOut="1800000" id="ca5929ac-5fbf-440a-97ad-de3bd99f2f66" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS/POS/POS.UnitTests/bin/Debug/POS.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UnitTests.ProductPricePresenterTests, POS.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenInvalidBarcode_NothingDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="47e8f6aa-9f8f-3ddc-1273-2e6a8ba49ea6" executionId="ca5929ac-5fbf-440a-97ad-de3bd99f2f66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ca5929ac-5fbf-440a-97ad-de3bd99f2f66" testId="47e8f6aa-9f8f-3ddc-1273-2e6a8ba49ea6" testName="WhenInvalidBarcode_NothingDisplayed" computerName="ISDC20655" duration="00:00:00.5063575" startTime="2010-10-18T11:23:50.1982169+03:00" endTime="2010-10-18T11:23:50.7772748+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca5929ac-5fbf-440a-97ad-de3bd99f2f66">
+    </UnitTestResult>
+  </Results>
+</TestRun>

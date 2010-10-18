@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fee31df8-6941-4d0f-b5e4-0259e538efa8" name="florin.coros@ISDC20655 2010-10-18 12:20:58" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="458cc489-e0c0-47d6-bd63-6380afd613c8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-18 12_20_58" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-18T12:20:58.4525358+03:00" queuing="2010-10-18T12:20:58.7515358+03:00" start="2010-10-18T12:20:59.0865358+03:00" finish="2010-10-18T12:20:59.8465358+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenBarcodeScanned_PriceDisplayed" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="e4f2d8fb-79bc-26cc-22df-702f285d084a">
+      <Execution timeOut="1800000" id="93ce5d8b-4871-47ad-9b7b-ac28cf281b3e" />
+      <TestMethod codeBase="d:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenBarcodeScanned_PriceDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e4f2d8fb-79bc-26cc-22df-702f285d084a" executionId="93ce5d8b-4871-47ad-9b7b-ac28cf281b3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="93ce5d8b-4871-47ad-9b7b-ac28cf281b3e" testId="e4f2d8fb-79bc-26cc-22df-702f285d084a" testName="WhenBarcodeScanned_PriceDisplayed" computerName="ISDC20655" duration="00:00:00.4717135" startTime="2010-10-18T12:20:59.2155358+03:00" endTime="2010-10-18T12:20:59.7555358+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93ce5d8b-4871-47ad-9b7b-ac28cf281b3e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;10.4 (System.Double)&gt;. Actual:&lt;10.40 (System.String)&gt;. </Message>
+          <StackTrace>   at POS.UniTests.PricePresenterTests.WhenBarcodeScanned_PriceDisplayed() in d:\Training\TDD_WS\POS2\POS2\POS.UniTests\PricePresenterTests.cs:line 21
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3eb819e0-cf86-479c-8c78-5b28d3947b3d" name="florin.coros@ISDC20655 2010-10-18 11:22:03" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0112e86b-3cae-4da0-9ecc-b1f9aa5f3184">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-18 11_22_03" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-18T11:22:03.4335415+03:00" queuing="2010-10-18T11:22:03.7175699+03:00" start="2010-10-18T11:22:03.9615943+03:00" finish="2010-10-18T11:22:04.6516633+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenInvalidBarcode_NothingDisplayed" storage="d:\training\tdd_ws\pos\pos\pos.unittests\bin\debug\pos.unittests.dll" id="29990cfc-c692-54df-b903-d341a52fb1ae">
+      <Execution timeOut="1800000" id="a3853ff1-b5be-405f-b19f-e586910f01ff" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS/POS/POS.UnitTests/bin/Debug/POS.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UnitTests.ScannerListenerTests, POS.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenInvalidBarcode_NothingDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="29990cfc-c692-54df-b903-d341a52fb1ae" executionId="a3853ff1-b5be-405f-b19f-e586910f01ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a3853ff1-b5be-405f-b19f-e586910f01ff" testId="29990cfc-c692-54df-b903-d341a52fb1ae" testName="WhenInvalidBarcode_NothingDisplayed" computerName="ISDC20655" duration="00:00:00.3705192" startTime="2010-10-18T11:22:04.1256107+03:00" endTime="2010-10-18T11:22:04.5656547+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3853ff1-b5be-405f-b19f-e586910f01ff">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method POS.UnitTests.ScannerListenerTests.WhenInvalidBarcode_NothingDisplayed threw exception: 
+System.Exception: Exception of type 'System.Exception' was thrown.</Message>
+          <StackTrace>    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.MethodCallReturn`2.Execute(ICallContext call)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IPriceLookupProxy0b113355e7bd4ee88cb8904999f4b979.GetPrice(String productCode)
+   at POS.ProductPricePresenter.Scanner_BarcodeScanned(Object sender, BarcodeScannedEventArgs e) in D:\Training\TDD_WS\POS\POS\POS\ProductPricePresenter.cs:line 22
+   at POS.UnitTests.ScannerListenerTests.FakeScanner.ScanBarcode(String barcode) in D:\Training\TDD_WS\POS\POS\POS.UnitTests\ScannerListenerTests.cs:line 59
+   at POS.UnitTests.ScannerListenerTests.WhenInvalidBarcode_NothingDisplayed() in D:\Training\TDD_WS\POS\POS\POS.UnitTests\ScannerListenerTests.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

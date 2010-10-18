@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3ed59e61-e6be-4fc9-9746-cbd653e84deb" name="florin.coros@ISDC20655 2010-10-18 10:41:52" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0112e86b-3cae-4da0-9ecc-b1f9aa5f3184">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-18 10_41_52" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-18T10:41:52.0284110+03:00" queuing="2010-10-18T10:41:52.3224404+03:00" start="2010-10-18T10:41:52.6294711+03:00" finish="2010-10-18T10:41:53.3735455+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenBarcodeScanned_CorrectPriceDisplayed" storage="d:\training\tdd_ws\pos\pos\pos.unittests\bin\debug\pos.unittests.dll" id="950ab41a-89e2-376c-55f2-9d20484c096e">
+      <Execution timeOut="1800000" id="266e663f-8e18-42cd-bb00-567eec380ce1" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS/POS/POS.UnitTests/bin/Debug/POS.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UnitTests.ScannerListenerTests, POS.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenBarcodeScanned_CorrectPriceDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="950ab41a-89e2-376c-55f2-9d20484c096e" executionId="266e663f-8e18-42cd-bb00-567eec380ce1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="266e663f-8e18-42cd-bb00-567eec380ce1" testId="950ab41a-89e2-376c-55f2-9d20484c096e" testName="WhenBarcodeScanned_CorrectPriceDisplayed" computerName="ISDC20655" duration="00:00:00.4783835" startTime="2010-10-18T10:41:52.7344816+03:00" endTime="2010-10-18T10:41:53.2855367+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="266e663f-8e18-42cd-bb00-567eec380ce1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,8 @@
+D:\Training\TDD_WS\POS\POS\POS\bin\Debug\POS.exe
+D:\Training\TDD_WS\POS\POS\POS\bin\Debug\POS.pdb
+D:\Training\TDD_WS\POS\POS\POS\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Training\TDD_WS\POS\POS\POS\obj\x86\Debug\POS.Properties.Resources.resources
+D:\Training\TDD_WS\POS\POS\POS\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Training\TDD_WS\POS\POS\POS\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Training\TDD_WS\POS\POS\POS\obj\x86\Debug\POS.exe
+D:\Training\TDD_WS\POS\POS\POS\obj\x86\Debug\POS.pdb

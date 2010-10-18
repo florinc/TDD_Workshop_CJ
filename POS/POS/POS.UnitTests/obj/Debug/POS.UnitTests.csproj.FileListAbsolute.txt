@@ -1,0 +1,8 @@
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\bin\Debug\POS.UnitTests.dll
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\bin\Debug\POS.UnitTests.pdb
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\bin\Debug\Moq.dll
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\bin\Debug\POS.exe
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\bin\Debug\POS.pdb
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\obj\Debug\POS.UnitTests.dll
+D:\Training\TDD_WS\POS\POS\POS.UnitTests\obj\Debug\POS.UnitTests.pdb

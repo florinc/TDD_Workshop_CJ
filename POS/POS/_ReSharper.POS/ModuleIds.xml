@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="68C49EBF-0D7D-494F-B92B-F780FFB1D1BD" ModuleId="POS.UnitTests" />
+  <Module PersistentId="F954F50C-25B1-4543-B074-5AA8B6BF0E3C" ModuleId="POS" />
+</Modules>
