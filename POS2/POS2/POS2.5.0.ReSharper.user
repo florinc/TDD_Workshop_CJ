@@ -8,21 +8,47 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:Program.cs" caret="0" fromTop="0" />
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IPriceDisplay.cs" caret="104" fromTop="5" />
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="222" fromTop="10" />
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IScanner.cs" caret="56" fromTop="3" />
-      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="295" fromTop="9" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IPriceDisplay.cs" caret="69" fromTop="3" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PriceDispaly.Designer.cs" caret="13" fromTop="0" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PriceDispaly.cs" caret="563" fromTop="24" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:Program.cs" caret="754" fromTop="23" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:ITaxCalculator.cs" caret="256" fromTop="10" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IProductRepository.cs" caret="458" fromTop="15" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="2583" fromTop="23" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IScanner.cs" caret="161" fromTop="8" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="1365" fromTop="23" />
     </RecentFiles>
     <RecentEdits>
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="30" fromTop="1" />
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IPriceDisplay.cs" caret="69" fromTop="3" />
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IScanner.cs" caret="241" fromTop="10" />
-      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="515" fromTop="19" />
-      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="222" fromTop="10" />
-      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="555" fromTop="21" />
-      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="447" fromTop="15" />
-      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="264" fromTop="9" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IProductRepository.cs" caret="221" fromTop="21" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:Program.cs" caret="1541" fromTop="38" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IProductRepository.cs" caret="221" fromTop="11" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IProductRepository.cs" caret="221" fromTop="13" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IProductRepository.cs" caret="221" fromTop="15" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="29" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="26" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="20" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:Program.cs" caret="971" fromTop="30" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="20" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="693" fromTop="17" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="480" fromTop="11" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:ITaxCalculator.cs" caret="66" fromTop="1" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:Program.cs" caret="738" fromTop="22" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="6" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="14" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="20" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="19" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="31" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="21" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="1443" fromTop="18" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="937" fromTop="16" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:ITaxCalculator.cs" caret="256" fromTop="10" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="25" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:IProductRepository.cs" caret="271" fromTop="10" />
+      <File id="25208C3A-E870-4DEF-BB37-76A44595C7E8/f:PricePresenter.cs" caret="1349" fromTop="22" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="12" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="207" fromTop="28" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="2538" fromTop="21" />
+      <File id="CBDFAAAB-47CA-44D4-A1A6-EFD5A4B553E6/f:PricePresenterTests.cs" caret="3318" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -38,24 +64,169 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="0" />
+      <Item value="public" priority="10" />
       <Item value="TestClass" priority="0" />
-      <Item value="test" priority="0" />
+      <Item value="test" priority="3" />
       <Item value="PricePresenterTests`0" priority="0" />
-      <Item value="new" priority="0" />
+      <Item value="new" priority="12" />
       <Item value="PricePresenter" priority="0" />
       <Item value="AssemblyCleanupAttribute`0" priority="0" />
       <Item value="Assert`0" priority="0" />
-      <Item value="priceDisplay" priority="0" />
-      <Item value="prop" priority="1" />
-      <Item value="string" priority="1" />
-      <Item value="private" priority="0" />
+      <Item value="priceDisplay" priority="2" />
+      <Item value="prop" priority="2" />
+      <Item value="string" priority="11" />
+      <Item value="private" priority="5" />
       <Item value="target" priority="0" />
       <Item value="event" priority="0" />
-      <Item value="class" priority="0" />
+      <Item value="class" priority="4" />
+      <Item value="void" priority="4" />
+      <Item value="if" priority="5" />
+      <Item value="BarcodeScanned" priority="1" />
+      <Item value="barcode" priority="0" />
+      <Item value="FakeBarcodeScanner" priority="0" />
+      <Item value="scanner" priority="2" />
+      <Item value="IPriceDisplay`0" priority="2" />
+      <Item value="priceDisplayMock" priority="1" />
+      <Item value="m_Scanner" priority="0" />
+      <Item value="IScanner`0" priority="0" />
+      <Item value="m_PriceDisplay" priority="2" />
+      <Item value="TestMethod" priority="2" />
+      <Item value="readonly" priority="0" />
+      <Item value="double" priority="11" />
+      <Item value="e" priority="0" />
+      <Item value="decimal" priority="0" />
+      <Item value="m_ProductLookup" priority="0" />
+      <Item value="scannedBarcode" priority="4" />
+      <Item value="price" priority="16" />
+      <Item value="Text" priority="0" />
+      <Item value="Properties" priority="0" />
+      <Item value="Mock`0" priority="2" />
+      <Item value="IProductLookup`0" priority="0" />
+      <Item value="Mock&lt;IProductLookup&gt;" priority="0" />
+      <Item value="lookupMock" priority="4" />
+      <Item value="It`0" priority="5" />
+      <Item value="p" priority="5" />
+      <Item value="TestInitialize" priority="0" />
+      <Item value="Exception" priority="1" />
+      <Item value="m_PriceDisplayMock" priority="0" />
+      <Item value="Times`0" priority="0" />
+      <Item value="AddTax`0" priority="0" />
+      <Item value="m_TaxPercent" priority="0" />
+      <Item value="return" priority="9" />
+      <Item value="tax" priority="0" />
+      <Item value="federalTaxPercent" priority="4" />
+      <Item value="bool" priority="6" />
+      <Item value="do" priority="0" />
+      <Item value="federalTax" priority="1" />
+      <Item value="m_ProductRepository" priority="3" />
+      <Item value="provincialTax" priority="1" />
+      <Item value="GetProvincialTaxFor`0" priority="0" />
+      <Item value="productCode" priority="4" />
+      <Item value="Dictionary&lt;string,double&gt;" priority="0" />
+      <Item value="products" priority="3" />
+      <Item value="m_RepositoryMock" priority="0" />
+      <Item value="Dictionary" priority="1" />
+      <Item value="IProductRepository`0" priority="2" />
+      <Item value="repository" priority="0" />
+      <Item value="FakeBarcodeScanner`0" priority="0" />
+      <Item value="label1" priority="1" />
+      <Item value="var" priority="2" />
+      <Item value="PricePresenter`0" priority="1" />
+      <Item value="Scanner`0" priority="0" />
+      <Item value="Scanner" priority="0" />
+      <Item value="DictionaryProductRepository`0" priority="1" />
+      <Item value="Product`0" priority="2" />
+      <Item value="DictionaryProductRepository" priority="1" />
+      <Item value="Product" priority="0" />
+      <Item value="Code" priority="0" />
+      <Item value="IsProvincial" priority="0" />
+      <Item value="false" priority="1" />
+      <Item value="true" priority="2" />
+      <Item value="rep" priority="1" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="calculator" priority="0" />
+      <Item value="Mock&lt;IProductRepository&gt;" priority="0" />
+      <Item value="repStub" priority="0" />
+      <Item value="r" priority="1" />
+      <Item value="this" priority="1" />
+      <Item value="m_RepStub" priority="2" />
+      <Item value="static" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="CreateNewPricePresenter`0" priority="3" />
+      <Item value="taxCalculator" priority="1" />
+      <Item value="m_TaxCalculator" priority="0" />
+      <Item value="TaxCalculator`0" priority="0" />
+      <Item value="ITaxCalculator`0" priority="0" />
+      <Item value="Mock&lt;ITaxCalculator&gt;" priority="0" />
+      <Item value="t" priority="0" />
+      <Item value="m_TaxCalculatorStub" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="InvalidBarcodeException`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
       <Item value="AreEqual`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.UniTests.PricePresenterTests+FakeBarcodeScanner">
+      <Item value="Scan`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="SetupAllProperties`0" priority="5" />
+      <Item value="Object" priority="5" />
+      <Item value="Verify`1" priority="1" />
+      <Item value="Setup`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IScanner">
+      <Item value="BarcodeScanned" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IPriceDisplay">
+      <Item value="Text" priority="3" />
+      <Item value="ShowPrice`0" priority="0" />
+      <Item value="ShowError`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.BarcodeScannedEventArgs">
+      <Item value="Barcode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IProductLookup">
+      <Item value="GetPrice`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.It">
+      <Item value="Is`1" priority="0" />
+      <Item value="IsAny`1" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Returns`4" priority="6" />
+      <Item value="Throws`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.Times">
+      <Item value="Once`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.IProductRepository">
+      <Item value="IsProvincial`0" priority="4" />
+      <Item value="GetPrice`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="1" />
+      <Item value="Values" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.Product">
+      <Item value="Code" priority="0" />
+      <Item value="Price" priority="0" />
+      <Item value="IsProvincial" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2+ValueCollection">
+      <Item value="GetEnumerator`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.PricePresenter">
+      <Item value="federalTaxPercent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:POS.ITaxCalculator">
+      <Item value="GetFederalTax`0" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
