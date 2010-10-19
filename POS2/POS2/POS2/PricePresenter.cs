@@ -22,9 +22,15 @@ namespace POS
 
         private void Scanner_BarcodeScanned(object sender, BarcodeScannedEventArgs e)
         {
+            string productCode = e.Barcode;
+
+            if (string.IsNullOrEmpty(productCode))
+            {
+                 m_PriceDisplay.ShowScanError();
+            }
+
             try
             {
-                string productCode = e.Barcode;
                 double price = m_ProductRepository.GetPrice(productCode);
 
                 bool provincialTaxNeeded = m_ProductRepository.IsProvincial(productCode);
@@ -33,9 +39,9 @@ namespace POS
 
                 m_PriceDisplay.ShowPrice(priceWithFederalTax);
             }
-            catch (InvalidBarcodeException)
+            catch (ProductNotFoundException)
             {
-                m_PriceDisplay.ShowError();
+                m_PriceDisplay.ShowProductNotFound(productCode);
             }
         }
     }

@@ -16,15 +16,18 @@ namespace POS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Scanner scanner = new Scanner();
+            WindowScanner scanner = new WindowScanner();
             IProductRepository rep = ConfigureRepository();
 
             var taxCalculator = new TaxCalculator();
             var priceDisplay = new PriceDisplay();
-            var pricePresenter = new PricePresenter(scanner, priceDisplay, rep, taxCalculator);
             
-            Application.Run(priceDisplay);
+            var pricePresenter = new PricePresenter(scanner, priceDisplay, rep, taxCalculator);
 
+            scanner.Show();  
+            Application.Run(priceDisplay);
+             
+            
 
         }
 

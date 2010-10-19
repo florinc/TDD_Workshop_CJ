@@ -61,6 +61,12 @@
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowScanner.Designer.cs">
+      <DependentUpon>WindowScanner.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="PriceDispaly.resx">
       <DependentUpon>PriceDispaly.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +80,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WindowScanner.resx">
+      <DependentUpon>WindowScanner.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

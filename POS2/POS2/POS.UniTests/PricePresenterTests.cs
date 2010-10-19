@@ -19,15 +19,15 @@ namespace POS.UniTests
             m_FakePriceDisplay = new Mock<IPriceDisplay>();
             m_FakeRep = new Mock<IProductRepository>();
             m_FakeCalculator = new Mock<ITaxCalculator>();
+
+            PricePresenter pos = new PricePresenter(m_FakeScanner, m_FakePriceDisplay.Object, m_FakeRep.Object, m_FakeCalculator.Object);
         }
 
         [TestMethod]
-        public void WhenScanned_PriceDisplayed()
+        public void WhenScanned_ExistentProduct_CatalogPriceDisplayed()
         {
             m_FakeRep.Setup(r => r.GetPrice(It.IsAny<string>())).Returns(100);
             m_FakeCalculator.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns<double, bool>((p, b) => p);
-
-            PricePresenter pos = CreateNewPricePresenter();
 
             m_FakeScanner.Scan("12345");
 
@@ -35,44 +35,41 @@ namespace POS.UniTests
         }
 
         [TestMethod]
-        public void WhenInvalidBarcode_ErrorShown()
+        public void WhenScanned_NotExistentProduct_ProductNotFoundTextDisplayed()
         {
-            m_FakeRep.Setup(r => r.GetPrice("123asd4")).Throws(new InvalidBarcodeException());
+            m_FakeRep.Setup(r => r.GetPrice(It.IsAny<string>())).Throws(new ProductNotFoundException());
             m_FakeCalculator.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns<double, bool>((p, b) => p);
-
-            PricePresenter pos = CreateNewPricePresenter();
 
             m_FakeScanner.Scan("123asd4");
 
-            m_FakePriceDisplay.Verify(p => p.ShowError(), Times.Once());
+            m_FakePriceDisplay.Verify(p => p.ShowProductNotFound("123asd4"), Times.Once());
+        }
+
+        [TestMethod]
+        public void WhenScaned_EmptyStringBarcode_ScanErrorTextDisplayed()
+        {
+            m_FakeScanner.Scan(string.Empty);
+
+            m_FakePriceDisplay.Verify(d => d.ShowScanError(), Times.Once());
         }
 
         [TestMethod]
         public void WhenScanned_TaxCalculatorCalled()
         {
-            PricePresenter pos = CreateNewPricePresenter();
-
             m_FakeScanner.Scan("12345");
-            m_FakeCalculator.Verify(c=>c.CalculateTax(It.IsAny<double>(), It.IsAny<bool>()),Times.Once());
+            m_FakeCalculator.Verify(c => c.CalculateTax(It.IsAny<double>(), It.IsAny<bool>()), Times.Once());
         }
 
         [TestMethod]
-        public void WhenScanned_ProvincialAndFederalTaxDisplayed()
+        public void WhenProvincialScanned_CalculatorCalledWithProvincialTax()
         {
-            m_FakeRep.Setup(r => r.GetPrice("5678fe")).Returns(100);
-            m_FakeRep.Setup(r => r.IsProvincial("5678fe")).Returns(true);
-            m_FakeCalculator.Setup(t => t.CalculateTax(It.IsAny<double>(), It.IsAny<bool>())).Returns(113);
+            const string productCode = "5678fe";
 
-            PricePresenter pos = CreateNewPricePresenter();
+            m_FakeRep.Setup(r => r.IsProvincial(productCode)).Returns(true);
 
-            m_FakeScanner.Scan("5678fe");
+            m_FakeScanner.Scan(productCode);
 
-            m_FakePriceDisplay.Verify(p => p.ShowPrice(113), Times.Once());
-        }
-
-        private PricePresenter CreateNewPricePresenter()
-        {
-            return new PricePresenter(m_FakeScanner, m_FakePriceDisplay.Object, m_FakeRep.Object, m_FakeCalculator.Object);
+            m_FakeCalculator.Verify(c => c.CalculateTax(It.IsAny<double>(), true), Times.Once());
         }
 
         private class FakeBarcodeScanner : IScanner

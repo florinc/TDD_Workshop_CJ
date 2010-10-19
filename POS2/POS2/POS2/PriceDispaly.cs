@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace POS
@@ -16,14 +10,24 @@ namespace POS
             InitializeComponent();
         }
 
-        public void ShowPrice(double price)
+        public string DisplayText
         {
-            label1.Text = price.ToString();
+            get { return label1.Text; }
         }
 
-        public void ShowError()
+        public void ShowPrice(double price)
         {
-            label1.Text = "Error";
+            label1.Text = price.ToString("C");
+        }
+
+        public void ShowProductNotFound(string productCode)
+        {
+            label1.Text = string.Format(@"Product with code: {0} was not found", productCode);
+        }
+
+        public void ShowScanError()
+        {
+            
         }
     }
 }
