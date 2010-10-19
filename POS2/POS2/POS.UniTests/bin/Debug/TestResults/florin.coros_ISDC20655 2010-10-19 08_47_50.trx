@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dfb69690-1099-4cc0-aaae-2a73ec3b12f4" name="florin.coros@ISDC20655 2010-10-19 08:47:50" runUser="ISDCNET\florin.coros" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="458cc489-e0c0-47d6-bd63-6380afd613c8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="florin.coros_ISDC20655 2010-10-19 08_47_50" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-19T08:47:50.3157180+03:00" queuing="2010-10-19T08:47:50.9553057+03:00" start="2010-10-19T08:47:51.3452982+03:00" finish="2010-10-19T08:47:53.0612652+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WhenScanned_ProvincialAndFederalTaxDisplayed" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="5790517d-cd68-5f6b-486a-fd613832cff6">
+      <Execution timeOut="1800000" id="4a2da88c-b9f4-4149-a4cb-6787635fe248" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenScanned_ProvincialAndFederalTaxDisplayed" />
+    </UnitTest>
+    <UnitTest name="WhenScanned_PriceWithFederalTaxDisplayed" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="9e466bff-7acc-dc21-27a0-13d1f9e7e6eb">
+      <Execution timeOut="1800000" id="2b556e28-a71a-40ff-80d2-68336adc9442" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenScanned_PriceWithFederalTaxDisplayed" />
+    </UnitTest>
+    <UnitTest name="WhenInvalidBarcode_ErrorShown" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="00503b65-dc94-056e-9ab0-8d44aa21a90a">
+      <Execution timeOut="1800000" id="26b9c299-b62d-405f-810c-ea8b94c85c63" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenInvalidBarcode_ErrorShown" />
+    </UnitTest>
+    <UnitTest name="WhenScanned_PriceDisplayed" storage="d:\training\tdd_ws\pos2\pos2\pos.unitests\bin\debug\pos.unitests.dll" id="5bc4a45e-38a8-7118-e2f3-30876582aabf">
+      <Execution timeOut="1800000" id="a0c70e72-d50b-4a1d-926a-d3a0df92f017" />
+      <TestMethod codeBase="D:/Training/TDD_WS/POS2/POS2/POS.UniTests/bin/Debug/POS.UniTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="POS.UniTests.PricePresenterTests, POS.UniTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenScanned_PriceDisplayed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="00503b65-dc94-056e-9ab0-8d44aa21a90a" executionId="26b9c299-b62d-405f-810c-ea8b94c85c63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bc4a45e-38a8-7118-e2f3-30876582aabf" executionId="a0c70e72-d50b-4a1d-926a-d3a0df92f017" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e466bff-7acc-dc21-27a0-13d1f9e7e6eb" executionId="2b556e28-a71a-40ff-80d2-68336adc9442" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5790517d-cd68-5f6b-486a-fd613832cff6" executionId="4a2da88c-b9f4-4149-a4cb-6787635fe248" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="26b9c299-b62d-405f-810c-ea8b94c85c63" testId="00503b65-dc94-056e-9ab0-8d44aa21a90a" testName="WhenInvalidBarcode_ErrorShown" computerName="ISDC20655" duration="00:00:00.5272477" startTime="2010-10-19T08:47:52.3280793+03:00" endTime="2010-10-19T08:47:52.9208679+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26b9c299-b62d-405f-810c-ea8b94c85c63">
+    </UnitTestResult>
+    <UnitTestResult executionId="a0c70e72-d50b-4a1d-926a-d3a0df92f017" testId="5bc4a45e-38a8-7118-e2f3-30876582aabf" testName="WhenScanned_PriceDisplayed" computerName="ISDC20655" duration="00:00:00.0155560" startTime="2010-10-19T08:47:52.9364676+03:00" endTime="2010-10-19T08:47:52.9520673+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0c70e72-d50b-4a1d-926a-d3a0df92f017">
+    </UnitTestResult>
+    <UnitTestResult executionId="2b556e28-a71a-40ff-80d2-68336adc9442" testId="9e466bff-7acc-dc21-27a0-13d1f9e7e6eb" testName="WhenScanned_PriceWithFederalTaxDisplayed" computerName="ISDC20655" duration="00:00:00.0082645" startTime="2010-10-19T08:47:52.9676670+03:00" endTime="2010-10-19T08:47:52.9676670+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b556e28-a71a-40ff-80d2-68336adc9442">
+    </UnitTestResult>
+    <UnitTestResult executionId="4a2da88c-b9f4-4149-a4cb-6787635fe248" testId="5790517d-cd68-5f6b-486a-fd613832cff6" testName="WhenScanned_ProvincialAndFederalTaxDisplayed" computerName="ISDC20655" duration="00:00:00.0094301" startTime="2010-10-19T08:47:52.9676670+03:00" endTime="2010-10-19T08:47:52.9832667+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a2da88c-b9f4-4149-a4cb-6787635fe248">
+    </UnitTestResult>
+  </Results>
+</TestRun>
